@@ -25,6 +25,9 @@ Extent NUnit was written using the .NET CORE Fork of Extent Reports and provides
 A static class shared among all tests `ExtentNUnitManager` builds the test results and provides some access into the Extent framework.
 
 ### Usage
+
+The `ExtentNUnit` attribute and `ExtentNUnitFixture` are required to be on all classes that have tests you want reported. It's recommended that you create a BaseTest class that has those attributes, and then inherit all tests from that Base Test. Then you can use `ExtentNUnitCategory` to tag tests and group them on the Tags screen in ExtentReports.
+
 ```cs
 
 [TestFixture]
